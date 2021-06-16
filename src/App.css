@@ -105,6 +105,8 @@
 .Main{
   width: 100vw;
   height: 96%;
+  display: flex;
+  flex-direction: row;
 }
 /* Main Icons */
 .Main-icons{
@@ -136,19 +138,86 @@
   justify-content: center;
   align-items: center;
 }
-/* .MainIcon-rectangle{
-  width: 25px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  z-index: 10;
-  
-} */
+
 .MainIcon-border i{
   color: white;
   z-index: 9;
 }
+/* Main Schedule */
 
+.Main-schedule{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.schedule-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 0.5px solid RGBA(239, 239, 243, 1);
+}
+.scheduleimage{
+  border-radius: 15px 15px 0px 0px;
+  opacity: 0.75;
+}
+.schedule-tasks-container{
+  height: 350px;
 
+}
+.current-dateandtime{
+  position: absolute;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  gap: 0px;
+  margin: 0;
+}
+.current-time{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.current-date{
+  font-size: 0.6rem;
+}
+
+/* Meeting */
+
+.Meeting-container{
+  display:flex;
+  flex-direction: row;
+  margin-top: 35px;
+  gap: 10px;
+  align-items: center;
+}
+.Meeting-name{
+  font-weight: bold;
+}
+.Meeting-start{
+  padding: 8px 20px 8px 20px;
+  border-radius: 15px;
+  border: 0.5px solid RGBA(239, 239, 243, 1);
+}
+.Meeting-icon{
+  border-radius: 10px;
+  border: 0.5px solid RGBA(239, 239, 243, 1);
+  padding: 10px 7px 10px 7px;
+}
+.complete-meeting-container{
+  height: 110px;
+  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 30px; 
+text-align: left;
+}

@@ -1,6 +1,7 @@
 import '../App.css'
 
 import MainIcon from './MainIcon.js'
+import MainSchedule from './MainSchedule'
 function Main() {
   return(
     <div className="Main">
@@ -12,7 +13,9 @@ function Main() {
           <MainIcon name="Share screen" icon="fas fa-arrow-up"></MainIcon>
         </div>
       </div>
-      <div className="Main-schedule"></div>
+      <div className="Main-schedule">
+        <MainSchedule></MainSchedule>
+      </div>
     </div>
   )
 }
